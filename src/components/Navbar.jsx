@@ -1,18 +1,25 @@
 
 import { CartWidget } from "./CartWidget"
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Carousel from 'react-bootstrap/Carousel';
 export const ComponenteNavBar = () => {
 return (
-    <nav style={{backgroundColor:"black",display:"flex",justifyContent:"space-between",width:"100%" ,img:"10%"}}>       
-      <img className='imagenlogo' src="https://pbs.twimg.com/profile_images/1466348271006330885/q8bN20PN_400x400.jpg" alt="Logo de Pagina"/>
-      <ul style={{display:"flex",columnGap:"20px",justifyContent:"flex-end",color:"white",listStyle:"none",fontFamily:"fantasy",marginRight:""}}>
-         <li>Servicios </li>
-         <li>Productos </li>
-         <li>Social Gaming </li>
-         <li>Contacto</li>
-      </ul>
-      <CartWidget></CartWidget>
-    </nav>
-
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">Juegos</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Nosotros</Nav.Link>
+            <Nav.Link href="#features">Consolas</Nav.Link>
+            <Nav.Link href="#pricing">Ofertas</Nav.Link>
+          </Nav>
+          <CartWidget></CartWidget>
+        </Container>
+      </Navbar>
+      
+   
+   
 )
 }
   
