@@ -1,10 +1,12 @@
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' ;
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 
 export const CartWidget = () => {
 return (
     <>
-      <img src="https://cdn-icons-png.flaticon.com/512/5087/5087847.png" alt="carro"  style={{width:"30px"}}/>
+      <FontAwesomeIcon style={{color:"yellow"}} icon={faCoffee}/>
       <span style={{color:"yellow"}}>0</span>
     </>
 )
